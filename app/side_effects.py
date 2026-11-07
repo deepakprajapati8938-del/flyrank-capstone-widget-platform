@@ -29,3 +29,4 @@ def trigger_safe_side_effects(submission_data: dict) -> bool:
         # Non-critical operations never break the main response
         logger.warning(f"[SAFE SIDE-EFFECT ISOLATED] Email side effect failed: {str(e)}. Submission success preserved.")
         return False
+

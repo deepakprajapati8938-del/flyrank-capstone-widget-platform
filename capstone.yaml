@@ -30,3 +30,4 @@ demo_tenants:
     name: Globex Global
     api_key: globex_secret_key_456
     sample_widget_id: w_globex_feedback
+

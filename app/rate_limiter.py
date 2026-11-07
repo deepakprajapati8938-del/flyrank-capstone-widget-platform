@@ -56,3 +56,4 @@ class SlidingWindowRateLimiter:
 
 # Global instance for public submission endpoint
 submission_rate_limiter = SlidingWindowRateLimiter(requests_per_minute=15, burst_limit=5, burst_window_sec=2.0)
+

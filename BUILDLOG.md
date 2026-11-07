@@ -60,3 +60,4 @@ except Exception as e:
 cursor.execute("SELECT * FROM widgets WHERE tenant_id = ? ORDER BY created_at DESC", (tenant_id,))
 ```
 - **Why I wrote it this way**: Multi-tenancy must be enforced at the SQL query level, never filtered in memory. By injecting `tenant_id` from the verified API key directly into every `WHERE` clause, it is mathematically impossible for Tenant A to access Tenant B's data.
+

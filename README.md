@@ -190,3 +190,6 @@ curl -X GET "http://127.0.0.1:8000/api/v1/dashboard/stats" \
 - [x] **BUILDLOG.md**: AI usage disclosure, critical catches, and code line explanations.
 - [x] **test_customer_site/index.html**: Second-origin test page verifying CORS.
 - [x] **tests/test_probes.py & run_probes.py**: Automated acceptance probe suite passing 100%.
+
+#   f l y r a n k - c a p s t o n e - w i d g e t - p l a t f o r m  
+ 

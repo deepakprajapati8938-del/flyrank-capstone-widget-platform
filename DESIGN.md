@@ -104,3 +104,4 @@ erDiagram
 ## 5. Explicit Non-Goals
 - **Non-Goal**: We are NOT building a complex drag-and-drop form designer or visual canvas builder. The widget supports standard core templates (`signup`, `contact`, `cta`).
 - **Non-Goal**: We are NOT setting up paid cloud CDNs or external domain registrations. The external customer website is simulated locally on a distinct origin (`http://localhost:5500` vs `http://localhost:8000`).
+
