@@ -1,0 +1,32 @@
+version: 1
+name: flyrank-capstone-widget-platform
+author: Deepak Prajapati
+track: Backend Engineering
+description: Embeddable Widget & Lead-Capture Platform
+
+# Commands to boot, seed, and test
+run: uvicorn app.main:app --host 127.0.0.1 --port 8000
+seed: python seed.py
+test: python run_probes.py
+
+# Endpoints and ports
+base_url: http://127.0.0.1:8000
+customer_site_url: http://127.0.0.1:5500
+
+endpoints:
+  public_widget_script: /static/widget.js
+  public_widget_config: /widgets/{widget_id}/config
+  public_submission: /submissions
+  authenticated_widgets: /api/v1/widgets
+  authenticated_dashboard_submissions: /api/v1/dashboard/submissions
+  authenticated_dashboard_stats: /api/v1/dashboard/stats
+
+demo_tenants:
+  tenant_a:
+    name: Acme Corporation
+    api_key: acme_secret_key_123
+    sample_widget_id: w_acme_contact
+  tenant_b:
+    name: Globex Global
+    api_key: globex_secret_key_456
+    sample_widget_id: w_globex_feedback
